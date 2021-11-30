@@ -136,7 +136,7 @@ def main():
     process('train', 'raw/annotation_train.odgt', output_dir)
 
     with open('crowdhuman-%s.data' % args.dim, 'w') as f:
-        f.write("""classes = 2
+        f.write("""classes = 1
 train   = data/crowdhuman-%s/train.txt
 valid   = data/crowdhuman-%s/test.txt
 names   = data/crowdhuman.names
