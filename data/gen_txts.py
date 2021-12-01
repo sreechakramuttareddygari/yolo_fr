@@ -95,8 +95,8 @@ def process(set_='test', annotation_filename='raw/annotation_val.odgt',
                             ftxt.write(line)
                     '''
                     if 'fbox' in obj.keys():  # full body
-                        #line = txt_line(1, obj['fbox'], img_w, img_h)
-                        line = txt_line(0, obj['fbox'], img_w, img_h)
+                        line = txt_line(1, obj['fbox'], img_w, img_h)
+                        #line = txt_line(0, obj['fbox'], img_w, img_h)
                         if line:
                             ftxt.write(line)
             jpgs.append('data/%s/%s.jpg' % (output_dir, ID))
@@ -137,7 +137,7 @@ def main():
     process('train', 'raw/annotation_train.odgt', output_dir)
 
     with open('crowdhuman-%s.data' % args.dim, 'w') as f:
-        f.write("""classes = 1
+        f.write("""classes = 2
 train   = data/crowdhuman-%s/train.txt
 valid   = data/crowdhuman-%s/test.txt
 names   = data/crowdhuman.names
