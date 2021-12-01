@@ -35,10 +35,10 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1geVK91Sa7B2zPfkyaAo6r9_CxUrC3yIV CrowdHuman_train01.zip
-get_file https://drive.google.com/uc?id=1AbyOzJ7dr651htj8Z5SpvFUFHIKu7uzf CrowdHuman_train02.zip
-get_file https://drive.google.com/uc?id=1AfJsGzMslQZ58yrRSR4ysMbdninnak9q CrowdHuman_train03.zip
-get_file https://drive.google.com/uc?id=1Lc-z8m7BA-s1C16Mv_336CCvCWqB-uZP CrowdHuman_val.zip
+get_file https://drive.google.com/uc?id=134QOvaatwKdy0iIeNqA_p-xkAhkV4F8Y CrowdHuman_train01.zip
+get_file https://drive.google.com/uc?id=17evzPh7gc1JBNvnW1ENXLy5Kr4Q_Nnla CrowdHuman_train02.zip
+get_file https://drive.google.com/uc?id=1tdp0UCgxrqy1B6p8LkR-Iy0aIJ8l4fJW CrowdHuman_train03.zip
+get_file https://drive.google.com/uc?id=18jFI789CoHTppQ7vmRSFEdnGaSQZ4YzO CrowdHuman_val.zip
 # test data is not needed...
 # get_file https://drive.google.com/uc?id=1tQG3E_RrRI4wIGskorLTmDiWHH2okVvk CrowdHuman_test.zip
 get_file https://drive.google.com/u/0/uc?id=1Is9TQK7V9eLhTwmZIdl1KBLaOrqfmNjb annotation_train.odgt
