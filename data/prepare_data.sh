@@ -36,8 +36,8 @@ get_file()
 
 echo "** Download dataset files"
 get_file https://drive.google.com/uc?id=1n9P7SC-0qJjao592CnzMJPhelAJt1R__ CrowdHuman_train01.zip
-#get_file https://drive.google.com/uc?id=1OLRDrqtRr2Pf6jznf-01GVMssykriSjF CrowdHuman_train02.zip
-#get_file https://drive.google.com/uc?id=1AfJsGzMslQZ58yrRSR4ysMbdninnak9q CrowdHuman_train03.zip
+get_file https://drive.google.com/uc?id=1OLRDrqtRr2Pf6jznf-01GVMssykriSjF CrowdHuman_train02.zip
+get_file https://drive.google.com/uc?id=1AfJsGzMslQZ58yrRSR4ysMbdninnak9q CrowdHuman_train03.zip
 get_file https://drive.google.com/uc?id=183rcymc74egtxNDwz8GOIMyqNPCsyIkE CrowdHuman_val.zip
 # test data is not needed...
 # get_file https://drive.google.com/uc?id=1tQG3E_RrRI4wIGskorLTmDiWHH2okVvk CrowdHuman_test.zip
