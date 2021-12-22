@@ -55,7 +55,8 @@ unzip -n CrowdHuman_train.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
-ln Images/*.jpg ../crowdhuman-$1/
+ln Annotations_head_20k/*.jpg ../crowdhuman-$1/
+ln Annotations_head_20k/*.txt ../crowdhuman-$1/
 
 # the crowdhuman/ subdirectory now contains all train/val jpg images
 
