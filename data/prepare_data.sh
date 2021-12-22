@@ -51,7 +51,7 @@ for f in CrowdHuman_train01.zip CrowdHuman_train02.zip CrowdHuman_train03.zip Cr
   unzip -n ${f}
 done
 '''
-unzip -n CrowdHuman_train.zip
+unzip -n ln Annotations_head_20k.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
