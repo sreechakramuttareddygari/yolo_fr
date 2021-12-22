@@ -46,11 +46,10 @@ get_file https://drive.google.com/uc?id=1qOv-DUZ5VCj81z58CJ_jwQUTA0d4Lx3A CrowdH
 
 # unzip image files (ignore CrowdHuman_test.zip for now)
 echo "** Unzip dataset files"
-'''
-for f in CrowdHuman_train01.zip CrowdHuman_train02.zip CrowdHuman_train03.zip CrowdHuman_val.zip ; do
-  unzip -n ${f}
-done
-'''
+#for f in CrowdHuman_train01.zip CrowdHuman_train02.zip CrowdHuman_train03.zip CrowdHuman_val.zip ; do
+#  unzip -n ${f}
+#done
+
 unzip -n ln Annotations_head_20k.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
