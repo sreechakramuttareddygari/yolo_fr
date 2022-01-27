@@ -51,7 +51,7 @@ echo "** Unzip dataset files"
 #  unzip -n ${f}
 #done
 
-unzip -n ln annotation_check_yolo_format.zip
+unzip -n annotation_check_yolo_format.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
