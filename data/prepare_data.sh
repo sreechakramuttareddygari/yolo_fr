@@ -35,8 +35,9 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1kX-n2PQrcpY7r9d1L397QRyIcKGOON8o Annotations_all.zip
-#https://drive.google.com/file/d/1rrBNaBdX_jJkFZD0qMa4DL1HU2FFlPx9/view?usp=sharing
+get_file https://drive.google.com/uc?id=1ThkRW28OpuFbN3uOyt13q2k81Ll6LPsO Annotations_all.zip
+#https://drive.google.com/file/d/1ThkRW28OpuFbN3uOyt13q2k81Ll6LPsO/view?usp=sharing hissar queue
+#https://drive.google.com/file/d/1rrBNaBdX_jJkFZD0qMa4DL1HU2FFlPx9/view?usp=sharing hissar entrance
 #https://drive.google.com/file/d/1kX-n2PQrcpY7r9d1L397QRyIcKGOON8o/view?usp=sharing
 #get_file https://drive.google.com/uc?id=1sQ9HWEk8o7cb0BHYfUzIeui3Mo8G4fwZ CrowdHuman_train02.zip
 #get_file https://drive.google.com/uc?id=1iFsJjMyYqgowEc8I5Y-z_ugX0NAvlLUy CrowdHuman_train03.zip
@@ -52,12 +53,12 @@ echo "** Unzip dataset files"
 #  unzip -n ${f}
 #done
 
-unzip -n annotation_check_yolo_format_head.zip
+unzip -n hissar_queue_yolo_format_head.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
-ln annotation_check_yolo_format_head/*.jpg ../crowdhuman-$1/
-ln annotation_check_yolo_format_head/*.txt ../crowdhuman-$1/
+ln hissar_queue_yolo_format_head.zip/*.jpg ../crowdhuman-$1/
+ln hissar_queue_yolo_format_head.zip/*.txt ../crowdhuman-$1/
 
 # the crowdhuman/ subdirectory now contains all train/val jpg images
 
