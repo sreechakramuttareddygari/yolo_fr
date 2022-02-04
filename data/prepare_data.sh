@@ -35,9 +35,10 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1chnF6zgvfgPseqoa0rnhCLGruQYAjXJV Annotations_all.zip
+get_file https://drive.google.com/uc?id=1kX-n2PQrcpY7r9d1L397QRyIcKGOON8o Annotations_all.zip
 #https://drive.google.com/file/d/1chnF6zgvfgPseqoa0rnhCLGruQYAjXJV/view?usp=sharing hisar entrance
 #https://drive.google.com/file/d/1ThkRW28OpuFbN3uOyt13q2k81Ll6LPsO/view?usp=sharing hissar queue
+#https://drive.google.com/file/d/1kX-n2PQrcpY7r9d1L397QRyIcKGOON8o/view?usp=sharing
 #https://drive.google.com/file/d/1rrBNaBdX_jJkFZD0qMa4DL1HU2FFlPx9/view?usp=sharing hissar entrance
 #https://drive.google.com/file/d/1kX-n2PQrcpY7r9d1L397QRyIcKGOON8o/view?usp=sharing
 #get_file https://drive.google.com/uc?id=1sQ9HWEk8o7cb0BHYfUzIeui3Mo8G4fwZ CrowdHuman_train02.zip
