@@ -57,8 +57,8 @@ unzip -n hissar_queue_yolo_format_head.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
-ln hissar_queue_yolo_format_head.zip/*.jpg ../crowdhuman-$1/
-ln hissar_queue_yolo_format_head.zip/*.txt ../crowdhuman-$1/
+ln hissar_queue_yolo_format_head/*.jpg ../crowdhuman-$1/
+ln hissar_queue_yolo_format_head/*.txt ../crowdhuman-$1/
 
 # the crowdhuman/ subdirectory now contains all train/val jpg images
 
