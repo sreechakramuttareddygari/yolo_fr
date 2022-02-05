@@ -1,4 +1,4 @@
-classes = 1
+classes = 2
 train   = data/crowdhuman-416x416/train.txt
 valid   = data/crowdhuman-416x416/test.txt
 names   = data/crowdhuman.names
