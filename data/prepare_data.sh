@@ -35,7 +35,8 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1ThkRW28OpuFbN3uOyt13q2k81Ll6LPsO Annotations_all.zip
+get_file https://drive.google.com/uc?id=1GiTRhlUv22ejJF60ydcGh0Fw-Ex0uM5k Annotations_all.zip
+#https://drive.google.com/file/d/1GiTRhlUv22ejJF60ydcGh0Fw-Ex0uM5k/view?usp=sharing
 #https://drive.google.com/file/d/1ThkRW28OpuFbN3uOyt13q2k81Ll6LPsO/view?usp=sharing
 #https://drive.google.com/file/d/1kX-n2PQrcpY7r9d1L397QRyIcKGOON8o/view?usp=sharing
 #https://drive.google.com/file/d/1chnF6zgvfgPseqoa0rnhCLGruQYAjXJV/view?usp=sharing hisar entrance
