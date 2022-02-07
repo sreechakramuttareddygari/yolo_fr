@@ -88,18 +88,18 @@ def process(set_='test', annotation_filename='raw/annotation_val.odgt',
                     if obj['tag'] == 'mask':
                         continue  # ignore non-human
                     assert obj['tag'] == 'person'
-                   
+                    '''
                     if 'hbox' in obj.keys():  # head
                         line = txt_line(0, obj['hbox'], img_w, img_h)
                         if line:
                             ftxt.write(line)
                     '''
                     if 'fbox' in obj.keys():  # full body
-                        line = txt_line(1, obj['fbox'], img_w, img_h)
-                        #line = txt_line(0, obj['fbox'], img_w, img_h)
+                        #line = txt_line(1, obj['fbox'], img_w, img_h)
+                        line = txt_line(0, obj['fbox'], img_w, img_h)
                         if line:
                             ftxt.write(line)
-                    '''
+                    
             jpgs.append('data/%s/%s.jpg' % (output_dir, ID))
     # write the 'data/crowdhuman/train.txt' or 'data/crowdhuman/test.txt'
     set_path = output_dir / ('%s.txt' % set_)
