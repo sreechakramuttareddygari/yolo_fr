@@ -35,7 +35,8 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1XFktSS2phiijh0YPVSTf80Zqo7_VIets Annotations_all.zip
+get_file https://drive.google.com/uc?id=1vHmWx7YLQ0ziByMt-c4wrxclNaJhEgqd Annotations_all.zip
+#https://drive.google.com/file/d/1vHmWx7YLQ0ziByMt-c4wrxclNaJhEgqd/view?usp=sharing
 #https://drive.google.com/file/d/1XFktSS2phiijh0YPVSTf80Zqo7_VIets/view?usp=sharing
 #https://drive.google.com/file/d/1GiTRhlUv22ejJF60ydcGh0Fw-Ex0uM5k/view?usp=sharing
 #https://drive.google.com/file/d/1ThkRW28OpuFbN3uOyt13q2k81Ll6LPsO/view?usp=sharing
@@ -59,12 +60,12 @@ echo "** Unzip dataset files"
 #  unzip -n ${f}
 #done
 
-unzip -n queue_cons_yolo_format_2classes.zip
+unzip -n queue_cons_yolo_format_person2.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
-ln queue_cons_yolo_format_2classes/*.jpg ../crowdhuman-$1/
-ln queue_cons_yolo_format_2classes/*.txt ../crowdhuman-$1/
+ln queue_cons_yolo_format_person2/*.jpg ../crowdhuman-$1/
+ln queue_cons_yolo_format_person2/*.txt ../crowdhuman-$1/
 
 # the crowdhuman/ subdirectory now contains all train/val jpg images
 
