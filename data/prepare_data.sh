@@ -35,14 +35,16 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1vHmWx7YLQ0ziByMt-c4wrxclNaJhEgqd Annotations_all.zip
-get_file https://drive.google.com/uc?id=1sQ9HWEk8o7cb0BHYfUzIeui3Mo8G4fwZ CrowdHuman_train02.zip
-get_file https://drive.google.com/uc?id=1iFsJjMyYqgowEc8I5Y-z_ugX0NAvlLUy CrowdHuman_train03.zip
-get_file https://drive.google.com/uc?id=1G8ASJYDkK32uie5lj1tyHFE9MriKHdhM CrowdHuman_val.zip
+get_file https://drive.google.com/uc?id=1vkxbYmpQMqDpO1qt7Laid72nuF0JPUA_ Annotations_all.zip
+#https://drive.google.com/file/d/1vkxbYmpQMqDpO1qt7Laid72nuF0JPUA_/view?usp=sharing
+#https://drive.google.com/file/d/1vkxbYmpQMqDpO1qt7Laid72nuF0JPUA_/view?usp=sharing
+#get_file https://drive.google.com/uc?id=1sQ9HWEk8o7cb0BHYfUzIeui3Mo8G4fwZ CrowdHuman_train02.zip
+#get_file https://drive.google.com/uc?id=1iFsJjMyYqgowEc8I5Y-z_ugX0NAvlLUy CrowdHuman_train03.zip
+#get_file https://drive.google.com/uc?id=1G8ASJYDkK32uie5lj1tyHFE9MriKHdhM CrowdHuman_val.zip
 # test data is not needed...
 #get_file https://drive.google.com/uc?id=1tQG3E_RrRI4wIGskorLTmDiWHH2okVvk CrowdHuman_test.zip
-get_file https://drive.google.com/u/0/uc?id=1MX5jVfUNm-VC8OCg6YKzwwe7nd4PomUf annotation_train.odgt
-get_file https://drive.google.com/u/0/uc?id=103SIb64U-llIHoTUnwAuwi9e41Ny_tnD annotation_val.odgt
+#get_file https://drive.google.com/u/0/uc?id=1MX5jVfUNm-VC8OCg6YKzwwe7nd4PomUf annotation_train.odgt
+#get_file https://drive.google.com/u/0/uc?id=103SIb64U-llIHoTUnwAuwi9e41Ny_tnD annotation_val.odgt
 
 # unzip image files (ignore CrowdHuman_test.zip for now)
 echo "** Unzip dataset files"
