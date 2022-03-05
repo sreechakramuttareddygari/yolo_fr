@@ -54,12 +54,12 @@ echo "** Unzip dataset files"
 #  unzip -n ${f}
 #done
 
-unzip -n inout_mumbai_entrance_dataset_yolo_format_person1.zip
+unzip -n inout_mumbai_entrance_dataset_yolo_format_person.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
-ln inout_mumbai_entrance_dataset_yolo_format_person1/*.jpg ../crowdhuman-$1/
-ln inout_mumbai_entrance_dataset_yolo_format_person1/*.txt ../crowdhuman-$1/
+ln inout_mumbai_entrance_dataset_yolo_format_person/*.jpg ../crowdhuman-$1/
+ln inout_mumbai_entrance_dataset_yolo_format_person/*.txt ../crowdhuman-$1/
 
 # the crowdhuman/ subdirectory now contains all train/val jpg images
 
