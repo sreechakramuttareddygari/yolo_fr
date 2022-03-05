@@ -35,7 +35,8 @@ get_file()
 }
 
 echo "** Download dataset files"
-get_file https://drive.google.com/uc?id=1MNDgrlO3oFWymMWFfmfg_P2RvdlFK8w8 Annotations_all.zip
+get_file https://drive.google.com/uc?id=1qDSG7nva-Rz8PquQOenS9Xg7EjIukmdq Annotations_all.zip
+#https://drive.google.com/file/d/1qDSG7nva-Rz8PquQOenS9Xg7EjIukmdq/view?usp=sharing
 #https://drive.google.com/file/d/1SxQR_VQ5_YVrx4xV5TNUJYxtZnvrSfDU/view?usp=sharing
 #https://drive.google.com/file/d/1vkxbYmpQMqDpO1qt7Laid72nuF0JPUA_/view?usp=sharing
 #https://drive.google.com/file/d/1vkxbYmpQMqDpO1qt7Laid72nuF0JPUA_/view?usp=sharing
@@ -53,12 +54,12 @@ echo "** Unzip dataset files"
 #  unzip -n ${f}
 #done
 
-unzip -n inout_mumbai_entrance_dataset_yolo_format_person.zip
+unzip -n inout_mumbai_entrance_dataset_yolo_format_person1.zip
 echo "** Create the crowdhuman-$1/ subdirectory"
 rm -rf ../crowdhuman-$1/
 mkdir ../crowdhuman-$1/
-ln inout_mumbai_entrance_dataset_yolo_format_person/*.jpg ../crowdhuman-$1/
-ln inout_mumbai_entrance_dataset_yolo_format_person/*.txt ../crowdhuman-$1/
+ln inout_mumbai_entrance_dataset_yolo_format_person1/*.jpg ../crowdhuman-$1/
+ln inout_mumbai_entrance_dataset_yolo_format_person1/*.txt ../crowdhuman-$1/
 
 # the crowdhuman/ subdirectory now contains all train/val jpg images
 
